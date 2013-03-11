@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/substack/get-youtube-id.git"
+    "url": "git://github.com/jmorrell/get-youtube-id.git"
   },
   "homepage": "https://github.com/jmorrell/get-youtube-id",
   "keywords": [
