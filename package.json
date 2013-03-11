@@ -1,0 +1,29 @@
+{
+  "name": "get-youtube-id",
+  "version": "0.1.0",
+  "description": "Parse a youtube url returning the video ID.",
+  "main": "index.js",
+  "bin": {},
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "tape": "~0.2.2"
+  },
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/substack/get-youtube-id.git"
+  },
+  "homepage": "https://github.com/jmorrell/get-youtube-id",
+  "keywords": [
+    "youtube",
+    "url"
+  ],
+  "author": "Jeremy Morrell <morrell.jeremy@gmail.com>",
+  "license": "MIT",
+  "readmeFilename": "README.md"
+}
