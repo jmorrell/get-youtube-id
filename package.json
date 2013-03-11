@@ -1,6 +1,6 @@
 {
   "name": "get-youtube-id",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Parse a youtube url returning the video ID.",
   "main": "index.js",
   "bin": {},
