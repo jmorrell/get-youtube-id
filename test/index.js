@@ -43,3 +43,8 @@ test('match example cases', function(t) {
   });
 
 });
+
+test('disabling fuzzy mode', function(t) {
+  t.plan(1);
+  t.equal(getYouTubeID('youtube abcdefghijk', {fuzzy: false}), null);
+});

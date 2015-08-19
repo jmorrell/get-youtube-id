@@ -9,7 +9,11 @@
   }
 }(this, function (exports) {
 
-  return function (url) {
+  return function (url, opts) {
+    if (opts == undefined) {
+      opts = {fuzzy: true};
+    }
+
     if (/youtu\.?be/.test(url)) {
 
       // Look first for known patterns
@@ -29,12 +33,14 @@
         }
       }
 
-      // If that fails, break it apart by certain characters and look 
-      // for the 11 character key
-      var tokens = url.split(/[\/\&\?=#\.\s]/g);
-      for (i = 0; i < tokens.length; ++i) {
-        if (/^[^#\&\?]{11}$/.test(tokens[i])) {
-          return tokens[i];
+      if (opts.fuzzy) {
+        // If that fails, break it apart by certain characters and look 
+        // for the 11 character key
+        var tokens = url.split(/[\/\&\?=#\.\s]/g);
+        for (i = 0; i < tokens.length; ++i) {
+          if (/^[^#\&\?]{11}$/.test(tokens[i])) {
+            return tokens[i];
+          }
         }
       }
     }
