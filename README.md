@@ -15,6 +15,10 @@ var getYouTubeID = require('get-youtube-id');
 
 var id = getYouTubeID("http://www.youtube.com/watch?v=9bZkp7q19f0");
 console.log(id); // "9bZkp7q19f0"
+
+
+// Or, if you're using ES6 syntax:
+import getYouTubeID from 'get-youtube-id';
 ```
 
 ## Fuzzy matching
